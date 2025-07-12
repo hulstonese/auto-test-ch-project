@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="7.18" tests="4" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="webdriver.chrome.driver" value="/Users/hulston/.cache/selenium/chromedriver/mac64/138.0.7204.92/chromedriver"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/hulston/IdeaProjects/auto-test-ch-project/target/test-classes:/Users/hulston/IdeaProjects/auto-test-ch-project/target/classes:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.1/selenium-java-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.1/selenium-api-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.1/selenium-chrome-driver-4.14.1.jar:/Users/hulston/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/hulston/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/hulston/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/hulston/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/hulston/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/hulston/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/hulston/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.1/selenium-chromium-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.1/selenium-json-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.1/selenium-manager-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.1/selenium-devtools-v116-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.1/selenium-devtools-v117-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.1/selenium-devtools-v118-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.1/selenium-devtools-v85-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.1/selenium-edge-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.1/selenium-firefox-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.1/selenium-http-4.14.1.jar:/Users/hulston/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.1/selenium-ie-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.1/selenium-remote-driver-4.14.1.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/hulston/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.1/selenium-os-4.14.1.jar:/Users/hulston/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.1/selenium-safari-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.1/selenium-support-4.14.1.jar:/Users/hulston/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:/Users/hulston/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/hulston/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/hulston/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/hulston/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/hulston/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/hulston/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/hulston/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-testng/7.15.0/cucumber-testng-7.15.0.jar:/Users/hulston/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/hulston/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/hulston/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/hulston/.m2/repository/io/github/bonigarcia/webdrivermanager/6.1.0/webdrivermanager-6.1.0.jar:/Users/hulston/.m2/repository/com/google/code/gson/gson/2.13.0/gson-2.13.0.jar:/Users/hulston/.m2/repository/com/google/errorprone/error_prone_annotations/2.37.0/error_prone_annotations-2.37.0.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java/3.5.0/docker-java-3.5.0.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java-core/3.5.0/docker-java-core-3.5.0.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java-api/3.5.0/docker-java-api-3.5.0.jar:/Users/hulston/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/Users/hulston/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/Users/hulston/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/Users/hulston/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.0/docker-java-transport-httpclient5-3.5.0.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java-transport/3.5.0/docker-java-transport-3.5.0.jar:/Users/hulston/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/hulston/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/hulston/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/hulston/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/hulston/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/hulston/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/hulston/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/hulston/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/hulston/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/hulston/.m2/repository/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/hulston/IdeaProjects/auto-test-ch-project/target/surefire/surefirebooter-20250708124438063_3.jar /Users/hulston/IdeaProjects/auto-test-ch-project/target/surefire 2025-07-08T12-44-37_642-jvmRun1 surefire-20250708124438063_1tmp surefire_0-20250708124438063_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/hulston/IdeaProjects/auto-test-ch-project/target/test-classes:/Users/hulston/IdeaProjects/auto-test-ch-project/target/classes:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.1/selenium-java-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.1/selenium-api-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.1/selenium-chrome-driver-4.14.1.jar:/Users/hulston/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/hulston/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/hulston/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/hulston/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/hulston/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/hulston/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/hulston/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.1/selenium-chromium-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.1/selenium-json-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.1/selenium-manager-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.1/selenium-devtools-v116-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.1/selenium-devtools-v117-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.1/selenium-devtools-v118-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.1/selenium-devtools-v85-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.1/selenium-edge-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.1/selenium-firefox-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.1/selenium-http-4.14.1.jar:/Users/hulston/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.1/selenium-ie-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.1/selenium-remote-driver-4.14.1.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/hulston/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/hulston/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.1/selenium-os-4.14.1.jar:/Users/hulston/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.1/selenium-safari-driver-4.14.1.jar:/Users/hulston/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.1/selenium-support-4.14.1.jar:/Users/hulston/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:/Users/hulston/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/hulston/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/hulston/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/hulston/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/hulston/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/hulston/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/hulston/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/hulston/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/hulston/.m2/repository/io/cucumber/cucumber-testng/7.15.0/cucumber-testng-7.15.0.jar:/Users/hulston/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/hulston/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/hulston/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/hulston/.m2/repository/io/github/bonigarcia/webdrivermanager/6.1.0/webdrivermanager-6.1.0.jar:/Users/hulston/.m2/repository/com/google/code/gson/gson/2.13.0/gson-2.13.0.jar:/Users/hulston/.m2/repository/com/google/errorprone/error_prone_annotations/2.37.0/error_prone_annotations-2.37.0.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java/3.5.0/docker-java-3.5.0.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java-core/3.5.0/docker-java-core-3.5.0.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java-api/3.5.0/docker-java-api-3.5.0.jar:/Users/hulston/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/Users/hulston/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/Users/hulston/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/Users/hulston/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.0/docker-java-transport-httpclient5-3.5.0.jar:/Users/hulston/.m2/repository/com/github/docker-java/docker-java-transport/3.5.0/docker-java-transport-3.5.0.jar:/Users/hulston/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/hulston/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/hulston/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/hulston/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/hulston/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/hulston/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/hulston/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/hulston/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/hulston/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/hulston/.m2/repository/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/hulston"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/hulston/IdeaProjects/auto-test-ch-project"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/hulston/IdeaProjects/auto-test-ch-project/target/surefire/surefirebooter-20250708124438063_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.26+7-LTS-187"/>
+    <property name="user.name" value="hulston"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/hulston/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/vz/1bm2lgqn58bclycygyr8q1100000gn/T/"/>
+    <property name="java.version" value="11.0.26"/>
+    <property name="user.dir" value="/Users/hulston/IdeaProjects/auto-test-ch-project"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/hulston/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.26+7-LTS-187"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="runScenario[&quot;Successful room search with valid dates&quot;, &quot;Room Search Functionality&quot;](1)" classname="runners.TestRunner" time="5.441">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[normalize-space()=&apos;Check In&apos;]//following::input[@class=&apos;form-control react-datepicker-ignore-onclickoutside&apos;]&quot;}&#10;  (Session info: chrome=138.0.7204.93)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;11.0.26&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()=&apos;Check In&apos;]//following::input[@class=&apos;form-control react-datepicker-ignore-onclickoutside&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f936aa7424805bca5815299f7264ae27" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at pages.HomePage.searchRooms(HomePage.java:22)
+	at stepDefinitions.SearchSteps.enterDates(SearchSteps.java:26)
+	at ✽.I enter check-in date "2025-01-01" and check-out date "2025-01-05"(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/Search.feature:5)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Successful room search with valid dates                         &amp#27;[90m# src/test/java/features/Search.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the home page&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.SearchSteps.navigateToHome()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI enter check-in date &amp#27;[0m&amp#27;[31m&amp#27;[1m"2025-01-01"&amp#27;[0m&amp#27;[31m and check-out date &amp#27;[0m&amp#27;[31m&amp#27;[1m"2025-01-05"&amp#27;[0m &amp#27;[90m# stepDefinitions.SearchSteps.enterDates(java.lang.String,java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at pages.HomePage.searchRooms(HomePage.java:22)
+	at stepDefinitions.SearchSteps.enterDates(SearchSteps.java:26)
+	at ✽.I enter check-in date "2025-01-01" and check-out date "2025-01-05"(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/Search.feature:5)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click search button&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see available rooms&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/hulston/.cache/selenium/chromedriver/mac64/138.0.7204.92/chromedriver
+Jul 08, 2025 12:44:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 08, 2025 12:44:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.93. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Failed search with invalid dates&quot;, &quot;Room Search Functionality&quot;](2)" classname="runners.TestRunner" time="0.163">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[normalize-space()=&apos;Check In&apos;]//following::input[@class=&apos;form-control react-datepicker-ignore-onclickoutside&apos;]&quot;}&#10;  (Session info: chrome=138.0.7204.93)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;11.0.26&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()=&apos;Check In&apos;]//following::input[@class=&apos;form-control react-datepicker-ignore-onclickoutside&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f936aa7424805bca5815299f7264ae27" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at pages.HomePage.searchRooms(HomePage.java:22)
+	at stepDefinitions.SearchSteps.enterDates(SearchSteps.java:26)
+	at ✽.I enter check-in date "2025-01-10" and check-out date "2025-01-05"(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/Search.feature:11)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Failed search with invalid dates                                &amp#27;[90m# src/test/java/features/Search.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the home page&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.SearchSteps.navigateToHome()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI enter check-in date &amp#27;[0m&amp#27;[31m&amp#27;[1m"2025-01-10"&amp#27;[0m&amp#27;[31m and check-out date &amp#27;[0m&amp#27;[31m&amp#27;[1m"2025-01-05"&amp#27;[0m &amp#27;[90m# stepDefinitions.SearchSteps.enterDates(java.lang.String,java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at pages.HomePage.searchRooms(HomePage.java:22)
+	at stepDefinitions.SearchSteps.enterDates(SearchSteps.java:26)
+	at ✽.I enter check-in date "2025-01-10" and check-out date "2025-01-05"(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/Search.feature:11)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click search button&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see date validation error&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Successful booking with valid details&quot;, &quot;Room Booking Functionality&quot;](3)" classname="runners.TestRunner" time="0.128">
+    <failure message="Input must be set" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:94)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:74)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:43)
+	at pages.BookingPage.<init>(BookingPage.java:28)
+	at stepDefinitions.BookingSteps.selectFirstAvailableRoom(BookingSteps.java:30)
+	at ✽.I select the first available room(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/booking.feature:5)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Successful booking with valid details &amp#27;[90m# src/test/java/features/booking.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the home page&amp#27;[0m                   &amp#27;[90m# stepDefinitions.SearchSteps.navigateToHome()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI select the first available room&amp#27;[0m        &amp#27;[90m# stepDefinitions.BookingSteps.selectFirstAvailableRoom()&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:94)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:74)
+	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:43)
+	at pages.BookingPage.<init>(BookingPage.java:28)
+	at stepDefinitions.BookingSteps.selectFirstAvailableRoom(BookingSteps.java:30)
+	at ✽.I select the first available room(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/booking.feature:5)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI enter booking details:&amp#27;[0m                  &amp#27;[90m# stepDefinitions.BookingSteps.enterBookingDetails(java.util.Map<java.lang.String, java.lang.String>)&amp#27;[0m
+    | Firstname | Lastname | Email         | Phone      |
+    | John      | Doe      | john@test.com | 1234567890 |
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mBooking should be confirmed&amp#27;[0m              &amp#27;[90m# stepDefinitions.BookingSteps.verifyBookingConfirmation()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Failed booking with invalid email&quot;, &quot;Room Booking Functionality&quot;](4)" classname="runners.TestRunner" time="0.053">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[normalize-space()=&apos;Check In&apos;]//following::input[@class=&apos;form-control react-datepicker-ignore-onclickoutside&apos;]&quot;}&#10;  (Session info: chrome=138.0.7204.93)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;11.0.26&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()=&apos;Check In&apos;]//following::input[@class=&apos;form-control react-datepicker-ignore-onclickoutside&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f936aa7424805bca5815299f7264ae27" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at pages.HomePage.searchRooms(HomePage.java:22)
+	at stepDefinitions.BookingSteps.searchAvailableRooms(BookingSteps.java:25)
+	at ✽.I have searched for available rooms(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/booking.feature:12)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Failed booking with invalid email &amp#27;[90m# src/test/java/features/booking.feature:11&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI have searched for available rooms&amp#27;[0m &amp#27;[90m# stepDefinitions.BookingSteps.searchAvailableRooms()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at pages.HomePage.searchRooms(HomePage.java:22)
+	at stepDefinitions.BookingSteps.searchAvailableRooms(BookingSteps.java:25)
+	at ✽.I have searched for available rooms(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/booking.feature:12)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI select the first available room&amp#27;[0m    &amp#27;[90m# stepDefinitions.BookingSteps.selectFirstAvailableRoom()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI enter invalid email &amp#27;[0m&amp#27;[36m&amp#27;[1m"john@invalid"&amp#27;[0m  &amp#27;[90m# stepDefinitions.BookingSteps.enterInvalidEmail(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see email validation error&amp#27;[0m  &amp#27;[90m# stepDefinitions.BookingSteps.verifyEmailValidationError()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-08T12:44:38 BST" name="Surefire suite" finished-at="2025-07-08T12:44:45 BST" duration-ms="6592">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@44821a96]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-08T12:44:38 BST" name="Surefire test" finished-at="2025-07-08T12:44:45 BST" duration-ms="6592">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@44821a96]" started-at="2025-07-08T12:44:38 BST" name="setUpClass" finished-at="2025-07-08T12:44:39 BST" duration-ms="721" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6a12c7a8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@44821a96]" started-at="2025-07-08T12:44:39 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-08T12:44:44 BST" duration-ms="5407" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful room search with valid dates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Room Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+at pages.HomePage.searchRooms(HomePage.java:22)
+at stepDefinitions.SearchSteps.enterDates(SearchSteps.java:26)
+at ✽.I enter check-in date "2025-01-01" and check-out date "2025-01-05"(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/Search.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@44821a96]" started-at="2025-07-08T12:44:44 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-08T12:44:45 BST" duration-ms="181" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Failed search with invalid dates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Room Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+at pages.HomePage.searchRooms(HomePage.java:22)
+at stepDefinitions.SearchSteps.enterDates(SearchSteps.java:26)
+at ✽.I enter check-in date "2025-01-10" and check-out date "2025-01-05"(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/Search.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@44821a96]" started-at="2025-07-08T12:44:45 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-08T12:44:45 BST" duration-ms="132" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful booking with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Room Booking Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Input must be set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Input must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:94)
+at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:74)
+at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:43)
+at pages.BookingPage.<init>(BookingPage.java:28)
+at stepDefinitions.BookingSteps.selectFirstAvailableRoom(BookingSteps.java:30)
+at ✽.I select the first available room(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/booking.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@44821a96]" started-at="2025-07-08T12:44:45 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-08T12:44:45 BST" duration-ms="31" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Failed booking with invalid email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Room Booking Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']"}
+  (Session info: chrome=138.0.7204.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f936aa7424805bca5815299f7264ae27, findElement {using=xpath, value=//label[normalize-space()='Check In']//following::input[@class='form-control react-datepicker-ignore-onclickoutside']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.93, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /var/folders/vz/1bm2lgqn58b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56605/devtoo..., se:cdpVersion: 138.0.7204.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f936aa7424805bca5815299f7264ae27
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+at pages.HomePage.searchRooms(HomePage.java:22)
+at stepDefinitions.BookingSteps.searchAvailableRooms(BookingSteps.java:25)
+at ✽.I have searched for available rooms(file:///Users/hulston/IdeaProjects/auto-test-ch-project/src/test/java/features/booking.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@44821a96]" started-at="2025-07-08T12:44:45 BST" name="tearDownClass" finished-at="2025-07-08T12:44:45 BST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
