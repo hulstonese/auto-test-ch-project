@@ -5,10 +5,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import pages.BookingPage;
 import pages.HomePage;
 
 import utilities.DriverManager;
@@ -19,7 +17,6 @@ import java.util.Map;
 public class SearchSteps {
     WebDriver driver;
     HomePage homePage;
-    //BookingPage bookingPage;
 
     @Given("I am on the home page")
     public void navigateToHome() {
@@ -83,7 +80,6 @@ public class SearchSteps {
     public void iEnterSendUsAMessageFieldDetails(DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         Map<String, String> details = data.get(0);
-        //  homePage.scrollDown();
         homePage.enterNameField(details.get("Name"));
         homePage.enterEmailField(details.get("Email"));
         homePage.enterPhoneField(details.get("Phone"));
@@ -111,8 +107,7 @@ public class SearchSteps {
     @When("I select the first available room")
     public void selectFirstAvailableRoom() {
         homePage.selectFirstRoom();
-//        homePage.scrollDown();
-//        homePage.reserveNow();
+
     }
 
     @When("I enter booking details:")
