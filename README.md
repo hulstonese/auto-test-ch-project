@@ -9,7 +9,7 @@ This framework implements automated testing for:
 
 - JDK 11 or higher
 - Maven 3.8.4 or higher
-- Chrome/Firefox browser for local testing
+- Chrome browser for local testing
 - Docker and Docker Compose (for remote execution)
 
 ## Test Execution
