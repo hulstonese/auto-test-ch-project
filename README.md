@@ -4,7 +4,7 @@
 
 This framework implements automated testing for:
 - UI Testing: [Automation-Demo](https://automationintesting.online/#rooms) Hotel-Booking website using BDD with Selenium WebDriver
-- 
+
 ## Prerequisites
 
 - JDK 11 or higher
