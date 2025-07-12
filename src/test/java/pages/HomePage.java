@@ -1,10 +1,14 @@
 package pages;
 
-import com.github.weisj.darklaf.util.Actions;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
@@ -68,6 +72,8 @@ public class HomePage {
     @FindBy(xpath = "(//a[@class='btn btn-primary'][normalize-space()='Book now'])[1]")
     WebElement firstRoom;
 
+    @FindBy(xpath = "//button[normalize-space()='Today']") WebElement bookToday;
+
     @FindBy(id = "doReservation")
     WebElement reserveNow;
     @FindBy(xpath = "//input[@placeholder='Firstname']")
@@ -80,7 +86,7 @@ public class HomePage {
     WebElement phoneInput;
     @FindBy(xpath = "//button[normalize-space()='Reserve Now']")
     WebElement submitButton;
-    @FindBy(xpath = "//*[@id=\"root-container\"]/div/div[2]/div/div[2]/div/div/h2")
+    @FindBy(xpath = "//h2[@class='card-title fs-4 fw-bold mb-3']")
     WebElement confirmationAlert;
     @FindBy(css = ".email-error")
     WebElement emailError;
@@ -183,10 +189,14 @@ public class HomePage {
     }
 
     public void reserveNow() {
-        //  wait.until(ExpectedConditions.elementToBeClickable(reserveNow)).click();
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("arguments[0].style.visibility='visible';", reserveNow);
-        wait.until(ExpectedConditions.elementToBeClickable(reserveNow)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(bookToday)).click();
+        new Actions(driver)
+                .scrollToElement(reserveNow)
+                .moveToElement(reserveNow)
+                .pause(300)
+                .click(reserveNow)
+                .perform();
+
     }
 
     public void enterFirstName(String firstName) {

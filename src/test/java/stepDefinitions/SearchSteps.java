@@ -116,11 +116,13 @@ public class SearchSteps {
     }
 
     @When("I enter booking details:")
-    public void enterBookingDetails(Map<String, String> dataTable) {
-        homePage.enterFirstName(dataTable.get("Firstname"));
-        homePage.enterLastName(dataTable.get("Lastname"));
-        homePage.enterEmail(dataTable.get("Email"));
-        homePage.enterPhone(dataTable.get("Phone"));
+    public void enterBookingDetails(DataTable dataTable) {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        Map<String, String> details = data.get(0);
+        homePage.enterFirstName(details.get("Firstname"));
+        homePage.enterLastName(details.get("Lastname"));
+        homePage.enterEmail(details.get("Email"));
+        homePage.enterPhone(details.get("Phone"));
         homePage.submitBooking();
     }
 

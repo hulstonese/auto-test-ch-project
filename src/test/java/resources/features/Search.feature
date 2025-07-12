@@ -38,6 +38,6 @@ Feature: Room Search Functionality
     And I click on reserved button
     And I enter booking details:
       | Firstname | Lastname | Email         | Phone      |
-      | John      | Doe      | john@test.com | 1234567890 |
-    And I click on Reserve Now button
+      | John      | Doe      | john@test.com | 12345678901 |
+   # And I click on Reserve Now button
     Then Booking should be confirmed
