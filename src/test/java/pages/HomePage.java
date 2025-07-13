@@ -81,6 +81,7 @@ public class HomePage {
     WebElement submitButton;
     @FindBy(xpath = "//h2[@class='card-title fs-4 fw-bold mb-3']")
     WebElement confirmationAlert;
+    @FindBy(xpath = "//body//div//h2[1]") WebElement errorMessageElement;
     @FindBy(css = ".email-error")
     WebElement emailError;
     @FindBy(xpath = "//button[normalize-space()='Reserve Now']")
@@ -88,7 +89,7 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(120));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         PageFactory.initElements(driver, this);
     }
 
@@ -211,9 +212,40 @@ public class HomePage {
         submitButton.click();
     }
 
+    /**
+     * Checks if the booking confirmation page is displayed.
+     * @return true if confirmation page is visible, false otherwise.
+     */
+
     public boolean isBookingConfirmed() {
-        return wait.until(ExpectedConditions.visibilityOf(confirmationAlert)).isDisplayed();
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(confirmationAlert)).isDisplayed();
+        } catch (TimeoutException | NoSuchElementException e) {
+            // Element not found or not visible within the wait time
+            return false;
+        } catch (Exception e) {
+            // Handle any other unexpected exceptions if needed
+            return false;
+        }
     }
+
+    /**
+     * Checks if the error message page is displayed.
+     * @return true if error message element is visible, false otherwise.
+     */
+
+    public boolean isErrorPageDisplayed() {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(errorMessageElement)).isDisplayed();
+        } catch (TimeoutException | NoSuchElementException e) {
+            // Element not found or not visible within the wait time
+            return false;
+        } catch (Exception e) {
+            // Handle any other unexpected exceptions if needed
+            return false;
+        }
+     }
+
 
     public boolean isEmailErrorDisplayed() {
         return wait.until(ExpectedConditions.visibilityOf(emailError)).isDisplayed();

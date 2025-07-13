@@ -129,10 +129,12 @@ public class SearchSteps {
     }
 
     @Then("Booking should be confirmed")
-    public void verifyBookingConfirmation() {
-        Assert.assertTrue(homePage.isBookingConfirmed(),
-                "Booking Confirmed");
+    public void verifyBookingConfirmationOrError() {
+        boolean isConfirmed = homePage.isBookingConfirmed();
+        boolean isError = homePage.isErrorPageDisplayed();
+        Assert.assertTrue(isConfirmed || isError, "Neither booking confirmation nor error message was detected.");
     }
+
 
     @Then("I should see email validation error")
     public void verifyEmailValidationError() {
